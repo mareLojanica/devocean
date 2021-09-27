@@ -11,7 +11,7 @@ export interface ApiDataType extends ApidataTypeBusiness {
 }
 
 export type RouterHistoryTypes = RouteComponentProps<{ id: string }, {}, {}>
-export type BusinessData = {
+export interface BusinessData {
 	id: string
 	image: string
 	name: string
@@ -20,7 +20,7 @@ export type BusinessData = {
 	email: string
 	address: AdressBusiness
 }
-export type AdressBusiness = {
+export interface AdressBusiness {
 	city: string
 	country: string
 	number: string

@@ -1,6 +1,6 @@
 import { BusinessData } from "../../ApiDataType"
 
-export type ListItemDetailsState = {
+export interface ListItemDetailsState {
 	nearbyPlaces: BusinessData[] | []
 	currentBusiness: BusinessData
 }

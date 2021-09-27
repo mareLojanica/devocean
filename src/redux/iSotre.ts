@@ -4,7 +4,7 @@ export interface Store {
 	business: Business[]
 }
 
-export type Business = {
+export interface Business {
 	userId: number
 	id: number
 	title: string

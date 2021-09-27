@@ -1,6 +1,7 @@
 import { Store } from "../iSotre"
 
-export type loadAction = {
-	type: string
+type requestType = "LOAD_DATA_ERROR" | "LOAD_DATA_REQUEST" | "LOAD_DATA_SUCCESS"
+export interface loadAction {
+	type: requestType
 	payload: Store
 }
