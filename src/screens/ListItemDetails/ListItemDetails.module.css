@@ -1,0 +1,71 @@
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+.image__holder {
+	width: 100%;
+	height: 300px;
+	margin-bottom: 30px;
+}
+.image__holder > img {
+	width: 100%;
+	height: 300px;
+}
+
+.content {
+	display: flex;
+	max-width: 100%;
+	margin: 0 auto;
+	justify-content: space-around;
+}
+
+.column {
+	display: flex;
+	gap: 40px;
+}
+
+.content .column.nearby {
+	padding: 25px;
+	background: #fff;
+}
+
+.content .column .contact__article h2.title {
+	padding-top: 25px;
+	padding-bottom: 35px;
+}
+.content .column .contact__article p,
+.content .column.nearby h2.title {
+	padding-bottom: 8px;
+}
+.content .column.nearby .nearby__article {
+	width: 100%;
+}
+.content .column.nearby .nearby__article h2.title {
+	padding-bottom: 10px;
+}
+.content .column.nearby .nearby__article ul.places__lists {
+	width: 100%;
+	padding: 0 !important;
+}
+.content .column ul.places__lists {
+	width: 100%;
+}
+@media only screen and (max-width: 1377px) {
+	.content {
+		padding: 0 20px;
+		flex-basis: unset;
+		flex-wrap: wrap;
+	}
+	.column {
+		width: 100%;
+		flex-basis: unset !important;
+		margin-bottom: 20px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.column {
+		flex-wrap: wrap;
+	}
+	.contact__article {
+	}
+}

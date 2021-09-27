@@ -1,0 +1,17 @@
+.list__item {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	width: calc(100% - 20px);
+	background: #ededed;
+	border-radius: 2px;
+	padding: 10px;
+	margin-top: 10px;
+}
+.list__item > p {
+	margin: 0;
+}
+.list__item .subtitle {
+	min-width: 150px;
+	margin: 0 !important;
+}
